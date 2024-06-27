@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Domine:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --primary-color:#003399;
+    --primar-text-color:#0140FF;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 999;
+    transition: background .5s ease-in-out;
+}
+
+header img{
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header img:hover{
+    filter: grayscale(90%);
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-style: bold;
+    color: lightgray;
+    margin: 0px 20px;
+    transition: 0.5s ease ease-in-out;
+    
+    
+}
+
+
+header nav a::after:hover{
+    width: 100%;
+}
+
+header nav a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 600px;
+    height: 400px;
+}
+
+.navigation-active {
+    padding-top:25px ;
+    border-top: 5px solid white;
+    color: white;
+    transition: border-top 1s ease-in-out;
+
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Newman Homes</title>
+    <link rel="shortcut icon" href="../../Assets/img/hslogo.png" type="x-icon">
+    <link rel="stylesheet" href="../../Assets/css/contactus.css">
+    <link rel="stylesheet" href="../../Assets/css/navbar.css">
+    <link rel="stylesheet" href="../../Assets/css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../Assets/img/hslogo.png"/></a>
+            <h2 class="logo-name">Newman Homes</h2>
+        </div>
+        <nav>
+            <a href="../../index.html" class="web-nav">Home</a>
+            <a href="../Our properties/ourproperties.html" class="web-nav" >Our Properties</a>
+            <a href="../News and Events/newsandevent.html" class="web-nav">News and Events</a>
+            <a href="../Contact Us/contactus.html" class="navigation-active web-nav">Contact Us</a>
+            <a href="../About Us/aboutus.html" class="web-nav">About us</a>
+            <a id="menu" class="web-nav" onclick="openSideNav()"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11H19M1 6H19M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+        </nav>
+    </header>
+
+    <nav id="side-nav">
+        <a id="close" onclick="closeSideNav()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.75806 17.2428L12.0011 11.9998L17.2441 17.2428M17.2441 6.75684L12.0001 11.9998L6.75806 6.75684" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+        <a href="../../index.html"  id="home-nav" >Home</a>
+        <a href="../Our properties/ourproperties.html">Our Properties</a>
+        <a href="../News and Events/newsandevent.html">News and Events</a>
+        <a href="../Contact Us/contactus.html" class="navigation-active" >Contact Us</a>
+        <a href="../About Us/aboutus.html">About us</a>
+    </nav>
+    
+<div class="container">
+    <div class="loading" id="loading">
+        <div class="container__loading">
+            <div class="cube"><div class="cube__inner"></div></div>
+            <div class="cube"><div class="cube__inner"></div></div>
+            <div class="cube"><div class="cube__inner"></div></div>
+          </div>
+    </div>
+    <div class="form-container">
+        <div class="title-container">
+            <h1>Get in touch with Us</h1>
+         
+            <p>Stay connected and be the first to know about the latest developments and forthcoming ventures with Hang Seng Properties.
+                Dive into our articles to explore current trends, insights, and all the exciting news about our projects.
+            </p>
+
+          
+        </div>
+        <form action="submit_contact.php" method="post" id="contactForm">
+            <div id="responseMessage" class="alert alert-success" style="display:none;"></div>
+            <h1>Let's Talk</h1>
+            <!-- Name input box -->
+            <div class="input-box">
+                <h4>Name</h4>
+                <input type="text" name="name" placeholder="Enter Name" required>
+            </div>
+            <!-- Email input box -->
+            <div class="input-box">
+                <h4>Email</h4>
+                <input type="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <!-- Phone number input box -->
+            <div class="input-box">
+                <h4>Phone Number</h4>
+                <input type="tel" name="phone_number" placeholder="Enter Phone number">
+            </div>
+            <!-- Topic selection box -->
+            <div class="select-box">
+                <h4>Topic</h4>
+                <select class="select-item" name="topic" required>
+                    <option value="">Select a topic</option>
+                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="property-listing">Property Listing</option>
+                    <option value="buying-property">Buying a Property</option>
+                    <option value="selling-property">Selling a Property</option>
+                    <option value="events-and-viewing">Events and Viewings</option>
+                    <option value="customer-support">Customer Support</option>
+                </select>
+            </div>
+            <!-- Message input box -->
+            <div class="input-box">
+                <h4>Message</h4>
+                <textarea name="message" placeholder="Enter Message" rows="4" required></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" required>
+                <p>I have read and agree to our <a href="../Privacy Notice and Terms and Condition/terms-and-condition.html" target="_blank">Terms and Conditions</a> and <a href="../Privacy Notice and Terms and Condition/privacy-notice.html" target="_blank">Privacy Notice</a>.</p>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" disabled ="true">Submit</button>
+        </form>
+    </div>
+    
+  
+</div>
+<div class="contact-info-container">
+    <h1>Contact Details</h1>
+    <p id="address"> Unit 2007, 20th Floor, Philippine AXA Life Centre, 1289 Sen. Gil Puyat Avenue Makati City, Makati, Philippines</p>
+    <p id="phone"> 0917 105 7868</p>
+    <p id="email"> ask@privatebroker.com.ph</p>
+     
+</div>
+<footer>
+  <div class="top-container">
+      <div class="top-left-container">
+          <div class="logo-content">
+              <img src="../../Assets/img/hslogo.png"/>
+              <p>Newman Homes</p>
+          </div>
+          <div class="social-media-content">
+
+              <!--Facebook icon-->
+             <div class="icon facebook">
+              <a href="https://www.facebook.com/profile.php?id=61557880356272"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+             </div>
+
+              <!--Instagram icon-->
+              <div class="icon instagram">
+                  <a href="https://www.instagram.com/newmanhomes_/"><span><i class="fa-brands fa-instagram" ></i></span></a>
+              </div>
+             
+              <!--Twitter icon-->
+              <div class="icon youtube">
+                  <a href="https://www.youtube.com/channel/UCun5y1vzN56aT34IUJzyPHg"><span><i class="fa-brands fa-youtube"></i></span> </a>
+              </div>
+          
+                      
+          </div>
+          <div class="rules-content">
+              <a href="#" id="privacy-notice">Privacy Notice</a>
+              <a href="#" id="terms-and-condition">Terms and Conditions</a>
+          </div>
+      </div>
+      <div class="top-middle-container">
+          <h1>Navigation</h1>
+          <div class="navigation-content">
+              <h4><a href="./About Us/aboutus.html" id="about-us">About us</a></h4>
+        
+          </div>
+      </div>
+      <div class="top-right-container">
+          <h1>Get in Touch</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione et hic sit ab amet id odit at! Voluptatibus autem ea tempora nam perferendis, excepturi quibusdam praesentium sint odio porro.</p>
+          <div class="our-offices">
+              <h4><a href="#">Our offices </a></h4>
+          <i class="fa-solid fa-arrow-right"></i>
+          </div>
+      </div>
+  </div>
+  <div class="bottom-container">
+      <p id="hangseng-footer-p">Powered by Privatebrokers Inc.</p>
+  </div>
+</footer>
+
+<script src="../../Assets/JS/navigation.js"></script>
+<script src="../../Assets/JS/contactus.js"></script>
+<script src="../../Assets/JS/index.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loading = document.getElementById('loading');
+        var form = document.getElementById('contactForm');
+        if (!form) {
+            console.error('Form with id "contactForm" not found.');
+            return;
+        }
+    
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop the form from submitting the traditional way
+    
+            // // Show loading message immediately
+            // var responseContainer = document.getElementById('responseMessage');
+            // if (responseContainer) {
+            //     responseContainer.style.display = 'block';
+            //     responseContainer.textContent = 'Sending your message...';
+            // }
+
+            loading.style.display='block';
+    
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', form.action, true);
+    
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // if (!responseContainer) {
+                    //     console.error('Element with id "responseMessage" not found.');
+                    //     return;
+                    // }
+                    // responseContainer.style.display = 'block';
+                    // responseContainer.textContent = 'Thank you for your inquiry, your message has been sent! Please wait 24 hours for the response';
+                    loading.style.display='none';
+                    swal({
+                        title: "Submited",
+                        text: "Thank you for your inquiry, your message has been sent! Please wait 24 hours for the response",
+                        icon: "success",
+                        buttons: false, // Hides the default button
+                        timer: 3000, // Closes the alert after 3 seconds
+                       
+                    });
+                    form.reset(); // Reset form after successful submission
+                } else {
+                    console.error('The request failed with status: ' + xhr.status);
+                    // responseContainer.style.display = 'block';
+                    // responseContainer.textContent = 'There was an error with your submission. Please try again later.';
+                    loading.style.display='none';
+                    swal({
+                        title: "Error!",
+                        text: "There was an error with your submission. Please try again later.",
+                        icon: "error",
+                        buttons: false, // Hides the default button
+                        timer: 3000, // Closes the alert after 3 seconds
+                       
+                    });
+                }
+            };
+    
+            xhr.onerror = function () {
+                console.error('The request encountered an error.');
+                // if (responseContainer) {
+                //     responseContainer.style.display = 'block';
+                //     responseContainer.textContent = 'There was an error with your submission. Please try again later.';
+                // }
+                loading.style.display='none';
+                swal({
+                        title: "Error!",
+                        text: "There was an error with your submission. Please try again later.",
+                        icon: "error",
+                        buttons: false, // Hides the default button
+                        timer: 3000, // Closes the alert after 3 seconds
+                       
+                    });
+            };
+    
+            // Set a timeout for the request
+            xhr.timeout = 5000; // Timeout after 5 seconds
+            xhr.ontimeout = function () {
+                console.error('The request timed out.');
+                // if (responseContainer) {
+                //     responseContainer.style.display = 'block';
+                //     responseContainer.textContent = 'The request timed out. Please try again later.';
+                // }
+                loading.style.display='none';
+                swal({
+                        title: "Request time out",
+                        text: "Please try again later.",
+                        icon: "info",
+                        buttons: false, // Hides the default button
+                        timer: 3000, // Closes the alert after 3 seconds
+                       
+                    });
+            };
+    
+            xhr.send(formData);
+        });
+    });
+    </script>
+
+</body>
+</html>

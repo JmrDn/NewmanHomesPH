@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newman Homes</title>
+    <link rel="shortcut icon" href="./Assets/img/hslogo.png" type="x-icon">
+    <link rel="stylesheet" href="./Assets/css/index.css">
+    <link rel="stylesheet" href="./Assets/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Assets/img/hslogo.png"/>
+            <h2 class="logo-name">Newman Homes</h2>
+        </div>
+        <nav id="nav">
+            <a  id="home-nav" class="navigation-active web-nav">Home</a>
+            <a href="./Modules/Our properties/ourproperties.html" class="web-nav">Our Properties</a>
+            <a href="./Modules/News and Events/newsandevent.html" class="web-nav">News and Events</a>
+            <a href="./Modules/Contact Us/contactus.html" class="web-nav">Contact Us</a>
+            <a href="./Modules/About Us/aboutus.html" class="web-nav">About us</a>
+            <a id="menu" class="web-nav" onclick="openSideNav()"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11H19M1 6H19M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+        </nav>
+
+    </header>
+
+    <nav id="side-nav">
+        <a id="close" onclick="closeSideNav()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.75806 17.2428L12.0011 11.9998L17.2441 17.2428M17.2441 6.75684L12.0001 11.9998L6.75806 6.75684" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+        <a href="./index.html"  id="home-nav" class="navigation-active">Home</a>
+        <a href="./Modules/Our properties/ourproperties.html">Our Properties</a>
+        <a href="./Modules/News and Events/newsandevent.html">News and Events</a>
+        <a href="./Modules/Contact Us/contactus.html" >Contact Us</a>
+        <a href="./Modules/About Us/aboutus.html">About us</a>
+    </nav>
+
+
+    
+    <section class="first-container" id="first">
+     
+        <div class="first-sub-container">
+            <p id="first-title"  class="title">Connecting Dreams Worldwide</p>
+            <p id="second-title"  class="title">Building Dreams, Creating Legacies</p></div>   
+        
+       
+    </section>
+       
+    <section class="second-container" id="second">
+
+        <div class="left-container">
+            <p id="destination">Our Properties</p>
+            <p id="destination-title" class="container-title">Discover Most Suitable Property</p>
+            <p id="destination-description">Discover our carefully curated selection of premium properties, ranging from modern townhouses to luxurious high-rise apartments, designed for a perfect living experience.</p>
+            <div class="discover-more-container">
+                <h3><a href="./Modules/Our properties/ourproperties.html" id="destination-more-info">Discover more</a></h3>
+                <i class="fa-solid fa-arrow-right" id="discover-more-arrow"></i>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card fraser-place-card">
+                    <div class="image-container"></div>
+                    <div class="details-container">
+                    <h1 class="property-name">Fraser Place</h1>
+                    <h3 class="property-location">Makati</h3>
+                    </div>
+                    <div class="hover-details-container">
+                    <h2>Fraser Place</h2>
+                    <p>Available Unit</p>
+                        <div class="unit 1" id="fraser-place">
+                            <div class="price-container" id="fraser-place">
+                                <h1>P160,000,000</h1>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.215 13.7501L13.51 7.04509L15.2775 5.27759L25 15.0001L15.2775 24.7226L13.51 22.9551L20.215 16.2501H5V13.7501H20.215Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                </li>
+                <li class="card anvaya-cove-card">
+                    <div class="image-container"></div>
+                    <div class="details-container">
+                        <h1 class="property-name">Anvaya Cove</h1>
+                        <h3 class="property-location">Bataan</h3>
+                    </div>
+                    <div class="hover-details-container">
+                        <h2>Anvaya Cove</h2>
+                        <p>Available Unit</p>
+                        <div class="unit 1" id="anvaya-cove">
+                            <div class="price-container" id="anvaya-cove'">
+                                <h1>P150,000,000</h1>
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.215 13.7501L13.51 7.04509L15.2775 5.27759L25 15.0001L15.2775 24.7226L13.51 22.9551L20.215 16.2501H5V13.7501H20.215Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                    </li>
+                <li class="card martinville-card">
+                    <div class="image-container"></div>
+                    <div class="details-container">
+                    <h1 class="property-name">Martinville Homes</h1>
+                    <h3 class="property-location">Las piñas</h3>
+                    </div>
+                    <div class="hover-details-container">
+                    <h2>Martinville Homes</h2>
+                    <p>Available Unit</p>
+                    <div class="unit b" id="martin-ville-homes-unit-b">
+                        <h1>Unit B</h1>
+                        <div class="price-container">
+                            <h1>P6,100,000</h1>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.215 13.7501L13.51 7.04509L15.2775 5.27759L25 15.0001L15.2775 24.7226L13.51 22.9551L20.215 16.2501H5V13.7501H20.215Z" fill="white"/>
+                                </svg>
+                        </div>
+                    </div>
+        
+                    
+                </div>
+                </li>
+                
+                
+             
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <section class="third-container" id="third">
+        <div class="news-and-events-text">
+            <h4>News and Events</h4>
+            <h1 id="news-and-events-title">Learn more about Real Estate's current projects and initiatives.</h1>
+        </div>
+        <div class="wrapper-news">
+            <i id="left-news" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel-news">
+              <li class="card-news">
+                  <a href="https://realestatenews.ph/featured-developer/manila-bays-entertainment-city-hotels-thrive-as-tourist-demand-soars-amidst-booming-economy" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg1.jpg"draggable="false"/>
+                    </div>
+                    <div class="details-container">
+                        <h3>Manila Bay's Entertainment City Hotels Thrive as Tourist Demand Soars Amidst Booming Economy</h3>
+                        <h4>2023-06-23</h4>
+                    </div>
+                  </a>
+              </li>
+              <li class="card-news" id="matin-ville-open-house-unit-b">
+                <div class="image-container-news">
+                    <img src="./Assets/img/martinvileopenhouseheaderimg.jpeg"draggable="false"/>
+                </div>
+                <div class="details-container">
+                    <h3>Open House at Martinville Subdivision Las Piñas City!</h3>
+                    <h4>2024-04-11</h4>
+                </div>
+              </li>
+              <li class="card-news">
+                <a href="https://enjoyingwonderfulworld.blogspot.com/2012/01/azkals-alyansa-madrid-team-all-set-for.html" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/dilikagnagiisa1.jpg" draggable="false"/>
+                    </div>
+                    <div class="details-container">
+                        <h3>Azkals Alyansa, Madrid team all set for friendly clash for the benefit of the victims of Tropical Storm Sendong</h3>
+                        <h4>2012-01-07</h4>
+                    </div>
+                </a>
+              </li>
+              <li class="card-news">
+                <a href="https://realestatenews.ph/national/clark-real-estate-radar/clark-secures-p444-billion-investments-in-q1" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg2.jpg" draggable="false"/>
+                    </div>
+                    <div class="details-container">
+                        <h3>Clark secures P44.4 billion investments in Q1</h3>
+                        <h4>2024-04-02</h4>
+                    </div>
+                </a>
+              </li>
+              <li class="card-news">
+                <a href="https://realestatenews.ph/regional/national/cebu/discover-cebu-a-gateway-to-prosperity-and-quality-living" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg4.jpg"  draggable="false"/>
+                    </div>
+                    <div class="details-container">
+                        <h3>Discover Cebu: A gateway to prosperity and quality living</h3>
+                        <h4>2024-04-06</h4>
+                    </div>
+                </a>
+              </li>
+              <li class="card-news">
+                <a  href="https://realestatenews.ph/national/featured-developer/why-location-matters-in-condo-living" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg5.jpg"draggable="false"/>
+                    </div>
+                    <div class="details-container">
+                        <h3>Why Location Matters in Condo Living</h3>
+                        <h4>2024-04-06</h4>
+                    </div>
+                </a>
+              </li>
+              <li class="card-news">
+                <a href="https://realestatenews.ph/national/association-column/creba-leadership-for-2024-2026-takes-office" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg3.jpg"draggable="false"/>
+                    </div>
+                    <div class="details-container">
+                        <h3>CREBA leadership for 2024-2026 takes office</h3>
+                        <h4>2024-04-05</h4>
+                    </div>
+                </a>
+              </li>
+              
+              <li class="card-news">
+                <a href="https://realestatenews.ph/national/dmci-marubeni-residential-joint-venture-seen-game-changer" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg6.jpg"draggable="false"/>
+                       </div>
+                        <div class="details-container">
+                            <h3>DMCI-Marubeni residential joint venture seen ‘game changer'</h3>
+                            <h4>2024-03-26</h4>
+                        </div>
+                </a>
+              </li>
+
+              <li class="card-news">
+                <a href="https://realestatenews.ph/national/featured-developer/bria-homes-eyes-continuous-expansion-in-horizontal-and-vertical-developments" target="_blank">
+                    <div class="image-container-news">
+                        <img src="./Assets/img/newsandeventsimg7.jpg" />
+                    </div>
+                    <div class="details-container">
+                        <h3>Bria Homes eyes continuous expansion in horizontal and vertical developments</h3>
+                        <h4>2021-07-23</h4>
+                    </div>
+                </a>
+              </li>
+            </ul>
+            <i id="right-news" class="fa-solid fa-angle-right"></i>
+          </div>
+
+        <div class="see-all-container">
+            <h3><a href="./Modules/News and Events/newsandevent.html" id="see-all">See all</a></h3>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+    
+
+    </section>
+
+    <footer>
+        <div class="top-container">
+            <div class="top-left-container">
+                <div class="logo-content">
+                    <img src="./Assets/img/hslogo.png"/>
+                    <p>Newman Homes</p>
+                </div>
+                <div class="social-media-content">
+
+                    <!--Facebook icon-->
+                   <div class="icon facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61557880356272"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                   </div>
+
+                    <!--Instagram icon-->
+                    <div class="icon instagram">
+                        <a href="https://www.instagram.com/newmanhomes_/"><span><i class="fa-brands fa-instagram" ></i></span></a>
+                    </div>
+                
+                    <!--Twitter icon-->
+                    <div class="icon youtube">
+                        <a href="https://www.youtube.com/channel/UCun5y1vzN56aT34IUJzyPHg"><span><i class="fa-brands fa-youtube"></i></span> </a>
+                    </div>
+                
+                            
+                </div>
+                <div class="rules-content">
+                    <a href="./Modules/Privacy Notice and Terms and Condition/privacy-notice.html" id="privacy-notice">Privacy Notice</a>
+                    <a href="./Modules/Privacy Notice and Terms and Condition/terms-and-condition.html" id="terms-and-condition">Terms and Conditions</a>
+                </div>
+            </div>
+            <div class="top-middle-container">
+                <h1>Navigation</h1>
+                <div class="navigation-content">
+                    <h4><a href="./Modules/About Us/aboutus.html" id="about-us">About us</a></h4>
+                <h4><a href="./Modules/Contact Us/contactus.html" id="contact-us">Contact us</a></h4>
+                </div>
+            </div>
+            <div class="top-right-container">
+                <h1>Get in Touch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione et hic sit ab amet id odit at! Voluptatibus autem ea tempora nam perferendis, excepturi quibusdam praesentium sint odio porro.</p>
+                <div class="our-offices">
+                    <h4><a href="#">Our offices </a></h4>
+                <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <p id="hangseng-footer-p">Powered by Privatebrokers Inc.</p>
+        </div>
+    </footer>
+
+    <script src="./Assets/JS/index.js"></script>
+    <script src="./Assets/JS/imageslider.js"></script>
+    <script src="./Assets/JS/imageslider-newsandevents.js"></script>
+    <script src="./Assets/JS/navigation.js"></script>
+</body>
+</html>

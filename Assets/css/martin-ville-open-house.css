@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Domine:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --primary-color:#003399;
+    --primar-text-color:#0140FF;
+    --sold-bg-color:#990000;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+    
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 999;
+    transition: background .5s ease-in-out;
+}
+
+header img{
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header img:hover{
+    filter: grayscale(90%);
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-style: bold;
+    color: lightgray;
+    margin: 0px 20px;
+    transition: 0.5s ease ease-in-out;
+    
+    
+}
+
+
+header nav a::after:hover{
+    width: 100%;
+}
+
+header nav a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    
+}
+
+.navigation-active {
+    padding-top:25px ;
+    border-top: 5px solid white;
+    color: white;
+    transition: border-top 1s ease-in-out;
+
+}
+
+.article-header-container{
+    height: 600px;
+    background-image: url("../img/martinvileopenhouseheaderimg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+ 
+    
+}
+
+.article-header-container .title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.article-header-container .title-container svg{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+ .article-header-container .title-container svg:hover path {
+    fill: darkgray;
+ }
+
+.article-header-container .title-container .news-or-events-container{
+    width: 100px;
+    height: auto;
+    padding: 5px 10px;
+    background-color: #0140FF;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.article-header-container .title-container .news-or-events-container h4{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.article-header-container .title-container h1{
+    font-size: 4rem;
+    text-align: start;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 2px black);
+}
+
+.article-header-container .title-container h4:not(.article-header-container .title-container .news-or-events-container h4){
+    color: lightgray;
+    margin-top: 20px;
+}
+
+.article-content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.article-content-container .context-container{
+    width: 900px;
+    background-color: white;
+    z-index:1;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: -1px -1px  3px rgba(0, 0, 0, 0.2),
+                2px 2px  3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.article-content-container .context-container img {
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 16 / 9;
+}
+
+.article-content-container .context-container .context p{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.article-content-container .context-container .context {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.article-content-container .context-container .eighth-container:last-child img{
+    margin-top: 20px;
+}
+.article-content-container .context-container .second-container img{
+    height: 90%;
+}
+.article-content-container .context-container .third-container img{
+    height: 90%;
+}
+
+
+@media (max-width:1024px){
+    .article-header-container .title-container{
+        padding: 20px;
+    }
+    .article-header-container .title-container{
+        top: 250px;
+    }
+}
+
+@media (max-width:768px){
+    .article-header-container .title-container h1{
+        font-size: 2rem;
+    }
+
+    .article-content-container{
+        width: 90%;
+        margin: auto;
+    }
+
+    .article-content-container .context-container img {
+ 
+        height: 200px;
+   
+    }
+
+    .article-content-container .context-container{
+        padding: 30px ;
+    }
+}

@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Properties | Newman Homes</title>
+    <link rel="shortcut icon" href="../../Assets/img/hslogo.png" type="x-icon"/>
+    <link rel="stylesheet" href="../../Assets/css/ourproperties.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../../Assets/css/navbar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../Assets/img/hslogo.png"/></a>
+            <h2 class="logo-name">Newman Homes</h2>
+        </div>
+        
+        <nav id="nav">
+            <a href="../../index.html" class="web-nav">Home</a>
+            <a href="../Our properties/ourproperties.html" class="navigation-active web-nav">Our Properties</a>
+            <a href="../News and Events/newsandevent.html" class="web-nav">News and Events</a>
+            <a href="../Contact Us/contactus.html" class="web-nav">Contact Us</a>
+            <a href="../About Us/aboutus.html" class="web-nav">About us</a>
+            <a id="menu" class="web-nav" onclick="openSideNav()"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11H19M1 6H19M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+        </nav>
+    </header>
+    
+    <nav id="side-nav">
+        <a id="close" onclick="closeSideNav()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.75806 17.2428L12.0011 11.9998L17.2441 17.2428M17.2441 6.75684L12.0001 11.9998L6.75806 6.75684" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+        <a href="../../index.html"  id="home-nav" >Home</a>
+        <a href="../Our properties/ourproperties.html" class="navigation-active">Our Properties</a>
+        <a href="../News and Events/newsandevent.html">News and Events</a>
+        <a href="../Contact Us/contactus.html" >Contact Us</a>
+        <a href="../About Us/aboutus.html">About us</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="panel-title-container">
+            <h1>Our Properties</h1>
+            <div class="line"></div>
+            <div class="description-and-filter-container">
+                <p>Discover Most Suitable Property</p>
+                <div class="filter-container">
+                   <button class="active-filter" data-name="all">All</button>
+                   <button data-name="for-sale" >For Sale</button>   
+                   <button data-name="on-going">On Going</button>   
+                   <button data-name="soon-to-rise">Soon to Rise</button>   
+                   <button data-name="sold">Sold</button>      
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  All
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><button data-name="all" class="dropdown-item" type="button">All</button></li>
+                  <li><button data-name="for-sale" class="dropdown-item" type="button">For Sale</button></li>
+                  <li><button data-name="on-going" class="dropdown-item" type="button">On Going</button></li>
+                  <li><button data-name="soon-to-rise" class="dropdown-item" type="button">Soon to Rise</button></li>
+                  <li><button data-name="sold" class="dropdown-item" type="button">Sold</button></li>
+                </ul>
+              </div>
+        </div>
+        <div class="list-of-properties-container">
+
+            <!--ANVAYA COVE-->
+            <div class="item item-1 .for-sale-item" id="anvaya-cove" data-name="for-sale">
+                <div class="img-container"><img src="../../Assets/img/anvayacove.jpg"/></div>
+                <div class="sale-container"><h3>FOR SALE</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Anvaya Cove</div>
+                    <div class="property-place">Bataan</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds 4</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths 4</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>1480 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>511 sqm</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="property-price"><h2>P150,000,000</h2></div>
+                </div>
+            </div>
+
+            <!--FRASER PLACE-->
+            <div class="item item-2" id="fraser-place" data-name="for-sale">
+                <div class="img-container"><img src="../../Assets/img/FRASERPLACE_LIVINGROOM.jpg"/></div>
+                <div class="sale-container"><h3>FOR SALE</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Fraser Place </div>
+                    <div class="property-place">Makati</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds 4</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths 4</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                            
+                        
+                        <div class="floor-area-container" id="fracer-place-flr-area">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>531 sqm</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2>P160,000,000</h2></div>
+                </div>
+            </div>
+
+             <!--MARTINVILLE HOMES-->
+            <div class="item item-3" id="martin-ville" data-name="for-sale">
+                <div class="img-container"><img src="../../Assets/img/MVUNITB.jpeg"/></div>
+                <div class="sale-container"><h3>FOR SALE</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Martinville Homes</div>
+                    <div class="property-place">Las Piñas</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds 3</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths 2</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>64 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>99.6 sqm</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2 class="martinville-promo">P6,400,000</h2></div>
+                </div>
+            </div>
+
+            <!--GREEN HEIGHTS PHASE 2-->
+            <div class="item item-4" id="GHPhase2" data-name="on-going">
+                <div class="img-container"><img src="../../Assets/img/GHPH2.jpg"/></div>
+                <div class="on-going-container"><h3>ON GOING</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Greenheights Village</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds 3</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths 4</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>178.29 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>162.20 sqm</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2>P17,000,000</h2></div>
+                </div>
+            </div>
+            
+            <!--GREEN HEIGHTS SECURITY BANK-->
+            <div class="item item-5" data-name="on-going">
+                <div class="img-container"><img src="../../Assets/img/GHSecurityBank.jpg"/></div>
+                <div class="on-going-container"><h3>ON GOING</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Greenheights Security Bank</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds 3</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths 4</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>300 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2>P28,000,000</h2></div>
+                </div>
+            </div>
+
+            <!--BRGY SAN ANTONIO-->
+            <div class="item item-6" data-name="soon-to-rise">
+                <div class="img-container"><img src="../../Assets/img/Fraser place Forbes Tower.png"/></div>
+                <div class="soon-to-rise-container"><h3>SOON TO RISE</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Brgy. San Antonio</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds TBA</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths TBA</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>540 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2>TBA</h2></div>
+                </div>
+            </div>
+
+             <!--MAPAYAPA VILLAGE-->
+             <div class="item item-7" data-name="soon-to-rise">
+                <div class="img-container"><img src="../../Assets/img/Fraser place Forbes Tower.png"/></div>
+                <div class="soon-to-rise-container"><h3>SOON TO RISE</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Mapayapa Village</div>
+                    <div class="property-place">Las Piñas</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds TBA</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths TBA</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>2991 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2>TBA</h2></div>
+                </div>
+            </div>
+
+             <!--GREEN HEIGHTS PHASE 1-->
+             <div class="item item-8" id="GHPhase1" data-name="sold">
+                <div class="img-container"><img src="../../Assets/img/GHPHASE1UNIT2.jpg"/></div>
+                <div class="sold-container"><h3>SOLD</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Greenheights Village Phase 1</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds TBA</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths TBA</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>TBA </p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA </p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2> </h2></div>
+                </div>
+            </div>
+
+               <!--LEVITOWN PARK ROW-->
+            <div class="item item-9" id="levitown-park-row" data-name="sold">
+                <div class="img-container"><img src="../../Assets/img/1.png"/></div>
+                <div class="sold-container"><h3>SOLD</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Levitown Park Row</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds 3</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths 2</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>100 sqm</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>85 sqm</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2> </h2></div>
+                </div>
+            </div>
+
+            <!--SUMAKWEL HOMES-->
+            <div class="item item-10" id="sumakwel-homes" data-name="sold">
+                <div class="img-container"><img src="../../Assets/img/sumakwel-home.PNG"/></div>
+                <div class="sold-container"><h3>SOLD</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Sumakwel Homes</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds TBA</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths TBA</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>TBA</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2> </h2></div>
+                </div>
+            </div>
+
+             <!--STA RITA PLACE-->
+             <div class="item item-11" id="sta-rita" data-name="sold">
+                <div class="img-container"><img src="../../Assets/img/sta-rita-place.PNG"/></div>
+                <div class="sold-container"><h3>SOLD</h3></div>
+                <div class="content-container">
+                    <div class="property-name">Sta. Rita Place</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds TBA</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths TBA</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>TBA</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA </p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2> </h2></div>
+                </div>
+            </div>
+
+             <!--UPS Homes--> 
+             <div class="item item-12" id="up-homes" data-name="sold">
+                <div class="img-container"><img src="../../Assets/img/Fraser place Forbes Tower.png"/></div>
+                <div class="sold-container"><h3>SOLD</h3></div>
+                <div class="content-container">
+                    <div class="property-name">UPS Homes</div>
+                    <div class="property-place">Parañaque</div>
+                    <div class="features">
+                        <div class="beds-container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Beds TBA</p> 
+                        </div>     
+                        
+                        <div class="baths-container">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                </svg>
+                                
+                            <p>Baths TBA</p>
+                        </div>                        
+                    </div>
+                    <div class="lot-and-floor">
+                        <div class="lot-area-container">
+                            <p class="tool-tip-text"> <span >Lot Area</span></p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V2C20 0.9 19.1 0 18 0ZM2 2H6V12H2V2ZM2 18V14H6V18H2ZM18 18H8V8H18V18ZM18 6H8V2H18V6Z" fill="black"/>
+                                </svg>
+                            <p>TBA</p> 
+                        </div>     
+                        
+                        <div class="floor-area-container">
+                            <p class="tool-tip-text"> <span >Floor Area</span></p>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 0H1.5C0.675 0 0 0.675 0 1.5V19.5C0 20.325 0.675 21 1.5 21H12.75V19.5C12.75 17.4 14.4 15.75 16.5 15.75V14.25C13.575 14.25 11.25 16.575 11.25 19.5H9V16.5H7.5V19.5H1.5V1.5H7.5V12H9V8.25H12V6.75H9V1.5H19.5V6.75H16.5V8.25H19.5V19.5H16.5V21H19.5C20.325 21 21 20.325 21 19.5V1.5C21 0.675 20.325 0 19.5 0Z" fill="black"/>
+                                </svg>   
+                            <p>TBA </p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                <div class="property-price"><h2> </h2></div>
+                </div>
+            </div>
+           
+        </div>
+        
+        
+    </div>
+    <div class="selected-item-container">
+     
+        <!--SELECTED GH PHASE2-->
+        <div class="main-item-container selected-ghphase2" id="selected-ghphase2">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Greenheights Phase 2</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit 1">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="on-going-container"><h3>ON GOING</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 1 External</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 184.14 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 179.34 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2>TBA</h2></div>
+                    </div>
+                </div>
+
+                <div class="unit 2">
+                    <div class="img-container"><img src="../../Assets/img/GHPHASE2-UNIT2.JPG"/></div>
+                    <div class="on-going-container"><h3>ON GOING</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 2 Internal</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds 3</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths 2</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 178.20 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 162.2 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2>P17,000,000</h2></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+         <!--SELECTED GH PHASE1-->
+         <div class="main-item-container selected-ghphase1" id="selected-ghphase1">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Greenheights Phase 1</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit 1">
+                    <div class="img-container"><img src="../../Assets/img/GHPHASE1UNIT1.jpg"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 1</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 170 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 179.75 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit 2">
+                    <div class="img-container"><img src="../../Assets/img/GHPHASE1UNIT2.jpg"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 2</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 165 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 178 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit 3">
+                    <div class="img-container"><img src="../../Assets/img/GHPHASE1UNIT3.jpg"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 3</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 162 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 231 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit 4">
+                    <div class="img-container"><img src="../../Assets/img/GHPHASE1UNIT4.jpg"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 4</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 155 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 123 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--SELECTED MARTINVILLE HOMES-->
+        <div class="main-item-container selected-martinville-homes" id="selected-martineville-homes">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Martinville Homes</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit a" id="martinville-homes-unita">
+                    <div class="img-container"><img src="../../Assets/img/MVUNITB.jpeg"/></div>
+                    <div class="on-going-container"><h3>ON GOING</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit A</div>
+                        <div class="property-place">Las Piñas</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: TBA</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: TBA</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2>P6,150,000</h2></div>
+                    </div>
+                </div>
+
+                <div class="unit b" id="martinville-homes-unitb">
+                    <div class="img-container"><img src="../../Assets/img/MVUNITB.jpeg"/></div>
+                    <div class="sale-container"><h3>FOR SALE</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit B</div>
+                        <div class="property-place">Las Piñas</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds 3</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths 2</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 64 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 99.6 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2 class="martinville-promo">P6,400,000</h2></div>
+                    </div>
+                </div>
+                <div class="unit c" id="martinville-homes-unitc">
+                    <div class="img-container"><img src="../../Assets/img/MVUNITB.jpeg"/></div>
+                    <div class="on-going-container"><h3>ON GOING</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit C</div>
+                        <div class="property-place">Las Piñas</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: TBA</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: TBA</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2>P6,050,000</h2></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SELECTED UP HOMES-->
+        <div class="main-item-container selected-uphomes" id="selected-uphomes">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Up Homes</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit a">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit A</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 210.63 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 127.92 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit b">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit B</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 184.94 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 127.92 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit c">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit C</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 162.10 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 128.16 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--SELECTED STA RITA-->
+        <div class="main-item-container selected-sta-rita" id="selected-sta-rita">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Sta Rita</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit 1">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 1</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 83.66 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 153.01 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit 2">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 2</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 83.66 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 137.28 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit 3">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit 3</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 83.66 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 149.90 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--SELECTED LEVITOWN PARK ROW-->
+        <div class="main-item-container selected-levitown-park-row" id="selected-levitown-park-row">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Levitown Park Row</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit a">
+                    <div class="img-container"><img src="../../Assets/img/1.png"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit A</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 49.70 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 75.68 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit b">
+                    <div class="img-container"><img src="../../Assets/img/1.png"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit B</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 51.30 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 80.28 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit c">
+                    <div class="img-container"><img src="../../Assets/img/1.png"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit C</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 51.30 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 85.68 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit d">
+                    <div class="img-container"><img src="../../Assets/img/1.png"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit D</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 51.30 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 85.28 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit e">
+                    <div class="img-container"><img src="../../Assets/img/1.png"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit E</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 77.40 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 80.28 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--SELECTED SUMAKWEL HOMES-->
+        <div class="main-item-container selected-sumakwel-homes" id="selected-sumakwel-homes">
+            <div class="title-container">     
+                <div class="back-container" id="back">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.99994 10L3.29294 10.707L2.58594 10L3.29294 9.29303L3.99994 10ZM20.9999 18C20.9999 18.2652 20.8946 18.5196 20.707 18.7071C20.5195 18.8947 20.2652 19 19.9999 19C19.7347 19 19.4804 18.8947 19.2928 18.7071C19.1053 18.5196 18.9999 18.2652 18.9999 18H20.9999ZM8.29294 15.707L3.29294 10.707L4.70694 9.29303L9.70694 14.293L8.29294 15.707ZM3.29294 9.29303L8.29294 4.29303L9.70694 5.70703L4.70694 10.707L3.29294 9.29303ZM3.99994 9.00003H13.9999V11H3.99994V9.00003ZM20.9999 16V18H18.9999V16H20.9999ZM13.9999 9.00003C15.8565 9.00003 17.6369 9.73753 18.9497 11.0503C20.2624 12.363 20.9999 14.1435 20.9999 16H18.9999C18.9999 14.6739 18.4732 13.4022 17.5355 12.4645C16.5978 11.5268 15.326 11 13.9999 11V9.00003Z" fill="black"/>
+                        </svg> 
+                </div>               
+                <h1>Sumakwel Homes</h1>
+            </div>
+       
+            <div class="item-container" >
+                <div class="unit a">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit A</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 59 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 118.33 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit b">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit B</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 59 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 118.33 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit c">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit C</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 59 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 118.33 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+                <div class="unit d">
+                    <div class="img-container"><img src="../../Assets/img/GHPH2-UNIT1.JPG"/></div>
+                    <div class="sold-container"><h3>SOLD</h3></div>
+                    <div class="content-container">
+                        <div class="property-name">Unit D</div>
+                        <div class="property-place">Parañaque</div>
+                        <div class="features">
+                            <div class="beds-container">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Beds TBA</p> 
+                            </div>     
+                            
+                            <div class="baths-container">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z" fill="black"/>
+                                    </svg>
+                                    
+                                <p>Baths TBA</p>
+                            </div>                        
+                        </div>
+                        <div class="lot-and-floor">
+                            <div class="lot-area-container">     
+                                <p>Lot area: 70 sqm</p> 
+                            </div>     
+                            
+                            <div class="floor-area-container">
+                                <p>Floor area: 118.12 sqm</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    <div class="property-price"><h2> </h2></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </div>
+   
+   
+   
+   
+    <script src="../../Assets/JS/navigation.js"></script>
+    <script src="../../Assets/JS/our-properties.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Domine:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --primary-color:#003399;
+    --primar-text-color:#0140FF;
+    --alternate-bg-color:#83A1DF;
+}
+@font-face {
+    font-family: 'Gordita';
+    src: url("../fonts/Gordita-Bold.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: url("../fonts/Gordita-Regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: url("../fonts/Gordita-Medium.otf") format('opentype');
+    font-weight: 500; /* Ensure this matches the weight of the Medium font */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: url("../fonts/Gordita-Light.otf") format('opentype');
+    font-weight: 300; /* Ensure this matches the weight of the Light font */
+    font-style: normal;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gordita', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    
+}
+body{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+.header-container{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-top: 80px;
+}
+
+.logo-container{
+    width: 570px;
+    height: 520px;
+    position:absolute;
+    left: -120px;
+    top: 0;
+    transition: width 1s ease-in-out,
+    height 1s ease-in-out;
+}
+
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Adjust the color as per your design */
+    mix-blend-mode: hard-light;
+    opacity: 0.5;
+}
+
+.header-title{
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin-left: 500px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: margin-left 1s ease-in-out;
+}
+.header-title h1{
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: start;
+}
+.header-title p{
+    font-size: 1.3rem;
+}
+
+.who-we-are-container{
+   
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+  
+}
+
+.who-we-are-container :where(h1, p) {
+    text-align: center;
+}
+
+.who-we-are-container h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.mission-container{
+    background-color: var(--alternate-bg-color);
+    display: flex;
+    height: auto;
+    gap: 50px;
+}
+
+.vision-container{
+    display: flex;
+    height: auto;
+    background-color: white;
+    gap: 50px;
+}
+
+.mission-container .mission-image-container,
+.vision-container .vision-image-container{
+    flex-basis: 50%;
+    padding: 80px 0px 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-container .vision-image-container{
+    padding: 80px 100px 80px 0px;
+}
+
+.mission-container .mission-image-container img, .vision-container .vision-image-container img{
+    width: 400px;
+    height: 400px;
+}
+
+.mission-container .mission-description, .vision-container .vision-description{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 100px 80px 0px;
+}
+.vision-container .vision-description{
+    padding: 80px 0px 80px 100px;
+}
+
+.mission-container .mission-description :where(h1, p),
+.vision-container .vision-description :where(h1, p){
+    text-align: start;
+}
+
+
+
+.mission-description h1,
+.vision-description h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    font-weight: bold;
+   
+}
+
+.history-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    
+}
+
+.history-container h1{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.history-container .birth-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+
+.history-container .birth-container .place{
+    margin-top: 50px;
+}
+
+.history-container .birth{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.birth-name{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.history-container .birth .details{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+.history-container .birth .img{
+    flex-basis: 60%;
+    height: 400px;
+   
+}
+
+.history-container .birth .img img{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+
+.service-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-container h1{
+
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-container .services-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-container .services-list .services{
+    min-width: 300px;
+    max-width: 400px;
+    height: 300px;
+    
+}
+
+.service-container .services-list .services img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 4 / 3;
+    object-position: center;
+
+}
+
+
+.org-chart-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    
+}
+
+.org-chart-container h1{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.org-chart-container img{
+    width: 100%;
+    height: 650px;
+}
+
+
+.our-team-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.our-team-container h1{
+    margin:50px 0px;
+    font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.list-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.list-container .card{
+    width: 550px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+
+
+}
+
+.card .image-container{
+    width: 200px;
+    height: 200px;
+    flex-basis: 40%;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+
+
+
+.card .profile-details{
+    flex-basis: 60%;
+}
+
+.card .profile-details h2{
+    font-weight: 500;
+}
+
+.card .profile-details .position{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: gray;
+   
+}
+
+#see-more-btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#see-more-btn:hover{
+    opacity: .8;
+    transform: translateY(-10px);
+}
+
+
+@media (max-width:1024px) {
+
+    section{
+        padding: 0 20px;
+    }
+
+    .history-container{
+        padding: 0 20px;
+    }
+
+    .org-chart-container{
+        padding: 0 20px;
+    }
+
+}
+@media (max-width:768px) {
+
+    /*First Container*/
+    .who-we-are-container{
+        padding: 0 20px;
+     
+    }
+    .container{
+       width: 100%;
+     
+       grid-template-columns: repeat(auto-fit, 100%);
+       
+    }
+    .panel-title-container h1{
+        font-size: 1.8rem;
+        transition: font-size .5s ease-in;    
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+
+    .logo-container{
+        width: 400px;
+        height: 380px;
+        top: 50px;
+        transition: width 1s ease-in-out,
+                    height 1s ease-in-out;
+    }
+
+    .header-title{
+    
+        margin-left: 50px;
+     
+    }
+
+    .header-container h1{
+        font-size: 2.5rem;
+    }
+
+    .who-we-are-container h1{
+        font-size: 2.5rem;
+    }
+    .vision-container, .mission-container{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .vision-container{
+        flex-direction: column-reverse;
+        gap: 0  ;
+    }
+    .mission-container{
+        gap: 0;
+    }
+
+    
+    .mission-container .mission-image-container,
+    .vision-container .vision-image-container{
+        padding: 20px;
+    }
+
+    .mission-container .mission-description, .vision-container .vision-description{
+        padding: 20px;
+    }
+
+    .mission-container .mission-description h1, .vision-container .vision-description h1{
+        font-size: 2rem;
+    }
+
+ 
+    .mission-container .mission-image-container img, .vision-container .vision-image-container img{
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+    .history-container h1{
+        font-size: 2.5rem;
+    }
+
+    .birth-name{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+  
+    .history-container .birth{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .service-container h1{
+        font-size: 2.5rem;
+    }
+
+    .org-chart-container img{
+        height: 400px;
+    }
+    .list-container .card{
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .card .profile-details h2{
+        margin-top: 20px;
+    }
+
+
+}
+
+

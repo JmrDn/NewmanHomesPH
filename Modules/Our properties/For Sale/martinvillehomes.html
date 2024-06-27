@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martinville Homes Unit B</title>
+  <link rel="shortcut icon" href="../../../Assets/img/hslogo.png" type="x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../Assets/css/for-sale-overview.css">
+  <link rel="stylesheet" href="../../../Assets/css/navbar.css">
+  <link rel="stylesheet" href="../../../Assets/css/loading.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html"><img src="../../../Assets/img/hslogo.png" /></a>
+      <h2 class="logo-name">Newman Homes</h2>
+    </div>
+    <nav>
+      <a href="../../../index.html" class="web-nav">Home</a>
+      <a href="../../Our properties/ourproperties.html" class="web-nav">Our Properties</a>
+      <a href="../../News and Events/newsandevent.html" class="web-nav">News and Events</a>
+      <a href="../../Contact Us/contactus.html" class="web-nav">Contact Us</a>
+      <a href="../../About Us/aboutus.html" class="web-nav">About us</a>
+      <a id="menu" class="web-nav" onclick="openSideNav()"><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 11H19M1 6H19M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <nav id="side-nav">
+    <a id="close" onclick="closeSideNav()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.75806 17.2428L12.0011 11.9998L17.2441 17.2428M17.2441 6.75684L12.0001 11.9998L6.75806 6.75684"
+          stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    <a href="../../../index.html" id="home-nav">Home</a>
+    <a href="../../Our properties/ourproperties.html">Our Properties</a>
+    <a href="../../News and Events/newsandevent.html">News and Events</a>
+    <a href="../../Contact Us/contactus.html">Contact Us</a>
+    <a href="../../About Us/aboutus.html">About us</a>
+  </nav>
+  <div class="loading" id="loading">
+    <div class="container__loading">
+        <div class="cube"><div class="cube__inner"></div></div>
+        <div class="cube"><div class="cube__inner"></div></div>
+        <div class="cube"><div class="cube__inner"></div></div>
+      </div>
+</div>
+  <div class="carousel-container">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../../../Assets/img/MVHUnitBKitchen.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h3>Kitchen</h3>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../../../Assets/img/MVHomesUnitBLivingRoom.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h3>Living Room</h3>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../../../Assets/img/MVHomesUnitBMastersBedroom.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h3>Master's Bedroom</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../../../Assets/img/MVHomesUnitBBalcony.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h3>Master's Balcony</h3>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="left-container">
+      <div class="details-container">
+        <h1 class="name" id="property-name">Martinville Homes Unit B</h1>
+        <h4 class="location-name" id="property-location">Martinville Subdivision Las Piñas, Metro Manila</h4>
+        <h1 class="price" id="propert-price">Price: P6,100,000</h1>
+        <div class="features-and-lot-floor-area">
+          <div class="beds-container">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z"
+                fill="black" />
+            </svg>
+
+            <p>Beds 3</p>
+          </div>
+
+          <div class="baths-container">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z"
+                fill="black" />
+            </svg>
+
+            <p>Baths 2</p>
+          </div>
+
+          <div class="lot-area-container">
+            <p id="property-lot-area">Lot area: 64 sqm</p>
+          </div>
+
+          <div class="floor-area-container">
+            <p id="propert-flr-area">Floor area: 99.6 sqm</p>
+          </div>
+
+        </div>
+        <div class="line"></div>
+        <div class="about-the-project">
+          <h1>About the Project</h1>
+          <p>Welcome to Our Townhouse Project in Las Piñas City! We're dedicated to providing top-notch materials and
+            amenities, ensuring your comfort and convenience as a homeowner.</p>
+        </div>
+        <div class="line"></div>
+        <div class="property-details">
+          <h1>Property Details</h1>
+          <ul>
+            <li>Town House</li>
+            <li>Martinville Homes</li>
+            <li>Unit B</li>
+            <li>Brand New</li>
+            <li>2-Storey</li>
+            <li>1 Parking</li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="features">
+          <h1>Features</h1>
+          <ul>
+            <li>Two Storey House</li>
+            <li>3 Bedrooms with Master's Toilet and Bath</li>
+            <li>Shared Toilet and Bath</li>
+            <li>Powder Room / Guest Comfort Room</li>
+            <li>Skylight for Natural light</li>
+            <li>Living Room</li>
+            <li>Dining Room</li>
+            <li>Kitchen Area</li>
+            <li>Balcony with Sliding Door</li>
+            <li>Laundry Area</li>
+            <li>Gated Carport</li>
+          </ul>
+        </div>
+
+        <div class="line"></div>
+        <div class="amenities">
+          <h1>Amenities</h1>
+          <p>Secure Parking | 24/7 Security</p>
+        </div>
+        <div class="line brochure-line"></div>
+        <div class="brochure">
+          <h1>Brochure</h1>
+          <a href="https://drive.google.com/file/d/175GU71EHpkq2TtbE7sWtLtw9agua62Sn/view?usp=drive_link"
+            target="_blank">
+            <img src="../../../Assets/img/martinvillehomesbrochure.png" alt="Brochure">
+          </a>
+
+        </div>
+
+        <div class="line"></div>
+        <div class="location">
+          <h1>Location</h1>
+          <div class="location-gmap-container"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.362573552074!2d120.99100687462752!3d14.463857880410869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf45cab0211f%3A0x3fc9c580d55a0ca9!2sHS%20Martinville%20Homes!5e0!3m2!1sen!2sph!4v1713930791989!5m2!1sen!2sph"
+              width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container">
+
+      <div class="form-container">
+        <h5>Ask about properties</h5>
+        <div id="responseMessage" class="alert alert-success" style="display:none;"></div>
+        <form id="contactForm" action="request_details.php" method="post">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Your name" required />
+          </div>
+          <div class="input-box">
+            <input type="text" name="phone_number" placeholder="Phone number" />
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input-box">
+            <input type="text" name="message" placeholder="Message" />
+          </div>
+          <input type="hidden" name="property_name" placeholder="Message">
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox" required>
+            <p>I have read and agree to our <a
+                    href="../../Privacy Notice and Terms and Condition/terms-and-condition.html" target="_blank">Terms and
+                    Conditions</a> and <a
+                    href="../../Privacy Notice and Terms and Condition/privacy-notice.html" target="_blank">Privacy Notice</a>.
+            </p>
+        </div>
+          <button type="submit" id="request-button"  >Request Details</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="other-properties-container">
+    <h1>Other Properties</h1>
+    <div class="list-of-properties-container">
+
+      <!--ANVAYA COVE-->
+      <div class="item item-1" id="anvaya-cove">
+        <div class="img-container"><img src="../../../Assets/img/anvayacove.jpg" /></div>
+        <div class="sale-container">
+          <h3>FOR SALE</h3>
+        </div>
+        <div class="content-container">
+          <div class="property-name">Anvaya Cove</div>
+          <div class="property-place">Bataan</div>
+          <div class="features">
+            <div class="beds-container">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z"
+                  fill="black" />
+              </svg>
+
+              <p>Beds 4</p>
+            </div>
+
+            <div class="baths-container">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z"
+                  fill="black" />
+              </svg>
+
+              <p>Baths 4</p>
+            </div>
+          </div>
+          <div class="lot-and-floor">
+            <div class="lot-area-container">
+              <p>Lot area: 1,480 sqm</p>
+            </div>
+
+            <div class="floor-area-container">
+              <p>Floor area: 511 sqm</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="property-price">
+            <h2>P150,000,000</h2>
+          </div>
+        </div>
+      </div>
+
+      <!--FRACER PLACE-->
+      <div class="item item-2" id="fracer-place">
+        <div class="img-container"><img src="../../../Assets/img/FRASERPLACE_LIVINGROOM.jpg" /></div>
+        <div class="sale-container">
+          <h3>FOR SALE</h3>
+        </div>
+        <div class="content-container">
+          <div class="property-name">Fraser Place</div>
+          <div class="property-place">Makati</div>
+          <div class="features">
+            <div class="beds-container">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z"
+                  fill="black" />
+              </svg>
+
+              <p>Beds 4</p>
+            </div>
+
+            <div class="baths-container">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z"
+                  fill="black" />
+              </svg>
+
+              <p>Baths 4</p>
+            </div>
+          </div>
+          <div class="lot-and-floor">
+
+            <div class="floor-area-container" id="fracer-place-flr-area">
+              <p>Floor area: 531 sqm</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="property-price">
+            <h2>P160,000,000</h2>
+          </div>
+        </div>
+      </div>
+
+      <!--GREEN HEIGHTS PHASE 2-->
+      <div class="item item-3" id="GHPhase2">
+        <div class="img-container"><img src="../../../Assets/img/GHPH2.jpg" /></div>
+        <div class="on-going-container">
+          <h3>ON GOING</h3>
+        </div>
+        <div class="content-container">
+          <div class="property-name">Greenheights Phase 2</div>
+          <div class="property-place">Las Piñas</div>
+          <div class="features">
+            <div class="beds-container">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 19V13C2 12.55 2.09167 12.1417 2.275 11.775C2.45833 11.4083 2.7 11.0833 3 10.8V8C3 7.16667 3.29167 6.45833 3.875 5.875C4.45833 5.29167 5.16667 5 6 5H10C10.3833 5 10.7417 5.071 11.075 5.213C11.4083 5.355 11.7167 5.55067 12 5.8C12.2833 5.55 12.5917 5.35433 12.925 5.213C13.2583 5.07167 13.6167 5.00067 14 5H18C18.8333 5 19.5417 5.29167 20.125 5.875C20.7083 6.45833 21 7.16667 21 8V10.8C21.3 11.0833 21.5417 11.4083 21.725 11.775C21.9083 12.1417 22 12.55 22 13V19H20V17H4V19H2ZM13 10H19V8C19 7.71667 18.904 7.47933 18.712 7.288C18.52 7.09667 18.2827 7.00067 18 7H14C13.7167 7 13.4793 7.096 13.288 7.288C13.0967 7.48 13.0007 7.71733 13 8V10ZM5 10H11V8C11 7.71667 10.904 7.47933 10.712 7.288C10.52 7.09667 10.2827 7.00067 10 7H6C5.71667 7 5.47933 7.096 5.288 7.288C5.09667 7.48 5.00067 7.71733 5 8V10Z"
+                  fill="black" />
+              </svg>
+
+              <p>Beds TBA</p>
+            </div>
+
+            <div class="baths-container">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 12V13C19 14.91 17.93 16.57 16.35 17.41L17 20H15L14.5 18H5.5L5 20H3L3.65 17.41C2.8494 16.9849 2.1797 16.3498 1.71282 15.5729C1.24594 14.7959 0.999514 13.9064 1 13V12H0V10H18V3C18 2.73478 17.8946 2.48043 17.7071 2.29289C17.5196 2.10536 17.2652 2 17 2C16.5 2 16.12 2.34 16 2.79C16.63 3.33 17 4.13 17 5H11C11 4.20435 11.3161 3.44129 11.8787 2.87868C12.4413 2.31607 13.2044 2 14 2H14.17C14.58 0.84 15.69 0 17 0C17.7956 0 18.5587 0.316071 19.1213 0.87868C19.6839 1.44129 20 2.20435 20 3V12H19ZM17 12H3V13C3 13.7956 3.31607 14.5587 3.87868 15.1213C4.44129 15.6839 5.20435 16 6 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V12Z"
+                  fill="black" />
+              </svg>
+
+              <p>Baths TBA</p>
+            </div>
+          </div>
+          <div class="lot-and-floor">
+            <div class="lot-area-container">
+              <p>Lot area: 178.20 sqm</p>
+            </div>
+
+            <div class="floor-area-container">
+              <p>Floor area: 162.20 sqm</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="property-price">
+            <h2>P17,000,000</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loading = document.getElementById('loading');
+        var form = document.getElementById('contactForm');
+        if (!form) {
+            console.error('Form with id "contactForm" not found.');
+            return;
+        }
+    
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop the form from submitting the traditional way
+    
+            // // Show loading message immediately
+            // var responseContainer = document.getElementById('responseMessage');
+            // if (responseContainer) {
+            //     responseContainer.style.display = 'block';
+            //     responseContainer.textContent = 'Sending your message...';
+            // }
+            loading.style.display ='block';
+    
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', form.action, true);
+    
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // if (responseContainer) {
+                    //     // responseContainer.style.display = 'block';
+                    //     // responseContainer.textContent = 'Thank you for your inquiry, we will get back to you soon! Email has been sent';
+                    //      // Reset form after successful submission
+                    // }
+                    loading.style.display ='none';
+                    swal({
+                        title: "Request Sent",
+                        text: "Thank you for your inquiry, we will get back to you soon!                       Email has been sent",
+                        icon: "success",
+                        buttons: false, // Hides the default button
+                        timer: 3000, // Closes the alert after 3 seconds
+                       
+                    });
+                        // setTimeout(function() {
+                        // responseContainer.style.display = 'none';
+                        // }, 3000);
+                        form.reset();
+                } else {
+                    console.error('The request failed!');
+                    // if (responseContainer) {
+                    //     responseContainer.style.display = 'block';
+                    //     responseContainer.textContent = 'There was an error with your submission. Please try again later.';
+                    // }
+                    loading.style.display ='none';
+                    swal({
+                        title: "Error!",
+                        text: "There was an error with your submission. Please try again later.",
+                        icon: "error",
+                        buttons: false, // Hides the default button
+                        timer: 3000 // Closes the alert after 3 seconds
+                    });
+                }
+            };
+    
+            xhr.onerror = function () {
+                console.error('The request failed!');
+                // if (responseContainer) {
+                //     responseContainer.style.display = 'block';
+                //     responseContainer.textContent = 'There was an error with your submission. Please try again later.';
+                // }
+                loading.style.display ='none';
+                swal({
+                        title: "Error!",
+                        text: "There was an error with your submission. Please try again later.",
+                        icon: "error",
+                        buttons: false, // Hides the default button
+                        timer: 3000 // Closes the alert after 3 seconds
+                    });
+            };
+    
+            // Set a timeout for the request
+            xhr.timeout = 5000; // Timeout after 5 seconds
+            xhr.ontimeout = function () {
+                console.error('The request timed out.');
+                // if (responseContainer) {
+                //     responseContainer.style.display = 'block';
+                //     responseContainer.textContent = 'The request timed out. Please try again later.';
+                   
+                // }
+                loading.style.display ='none';
+                swal({
+                        title: "Request timed out",
+                        text: "Please try again later.",
+                        icon: "info",
+                        buttons: false, // Hides the default button
+                        timer: 3000 // Closes the alert after 3 seconds
+                    });
+            };
+    
+            xhr.send(formData);
+        });
+    });
+    </script>
+  <script src="../../../Assets/JS/martin-ville-properties.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="../../../Assets/JS/navigation.js"></script>
+  <script src="../../../Assets/JS/for-sale-overview.js"></script>
+    
+</body>
+
+</html>
